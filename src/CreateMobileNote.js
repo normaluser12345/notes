@@ -23,8 +23,8 @@ function CreateMobileNote({ createNote, cancelNewMobileNote }) {
             <div className = "noteblock__body">
                 <textarea className = "changeNoteInput" value = {value} onChange = {event => setValue(event.target.value)} autoFocus></textarea>
                 <div className = "noteblock__buttons">
-                    <button className = "note__button changeNote__button" onClick = {createMobileNote}>Добавить</button>
-                    <button className = "note__button closeNote__button" onClick = {() => cancelNewMobileNote()}>Отменить</button>
+                    <button className = "note__button changeNote__button" onClick = {createMobileNote}>&#10003;</button>
+                    <button className = "note__button closeNote__button" onClick = {() => cancelNewMobileNote()}>X</button>
                 </div>
             </div>
         </div>

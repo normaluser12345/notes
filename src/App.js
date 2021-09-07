@@ -10,13 +10,9 @@ import './App.css';
 
 function App() {
 
-  const [notes, setNotes] = useState([
-    {id: 1, value: '1', isShown: false},
-    {id: 2, value: '2', isShown: false},
-    {id: 3, value: '3', isShown: false},
-    {id: 4, value: '4', isShown: false},
-  ])
+  const [notes, setNotes] = useState([])
 
+  //состояние для мобильной версии
   let [newMobileNote, setNewMobileNote] = useState(false)
 
   function createNote(value) {
